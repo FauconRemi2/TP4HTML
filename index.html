@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h1>Faucon Rémi - Les formulaires</h1>
+        <h2>Mon premier formulaire</h2>
+        <form action="formulaire.php" method="POST">
+            <div>
+                <label for="homme">Homme<input type="radio" id="homme" name="genre" value="homme"></label>
+                <label for="femme">Femme<input type="radio" id="femme" name="genre" value="femme"></label>
+                <label for="NR">non renseigné<input type="radio" id="NR" name="genre" value="NR"></label>
+            </div>
+            <div>
+                <label for="nom">nom :<input type="text" id="nom" name="nom" placeholder="votre nom"></label>
+            </div>
+            <div>
+                <label for="prenom">prenom :<input type="text" id="prenom" name="prenom" placeholder="votre prenom"></label>
+            </div>
+            <div>
+                <label for="age">Age :<input type="number" id="age" name="age" min="16" max="99" placeholder="min:16"></label>
+            </div>
+            <div>
+                <label for="email">Email :<input type="email" id="email" name="email" placeholder="xxxxxxx@xx.xx"></label>
+            </div>
+            <div>
+                <label for="textarea">Message :<textarea id="textarea"></textarea></label>
+            </div>
+            <div>
+                <label for="check"><input type="checkbox" id="check" value="checked" name="check">En cochant cette case j'accepte les conditions<br>
+                relatives à l'utilisation de mes données personnelles.<br>
+                <a href="#" title="mentions legales">(accéder aux mentions légales)</a></label>
+            </div>
+            <div>
+                <input type="submit" value="Envoyer le message">
+            </div>
+        </form>
+        <hr>
+        <h2>Ensemble de champs</h2>
+        <form action="formulaire2.php" method="POST">
+            <fieldset>
+                <legend>MON SECOND FORMULAIRE</legend>
+                <fieldset>
+                    <legend>Identité</legend>
+                    <div>
+                        <label for="homme2">Homme<input type="radio" id="homme2" name="genre" value="homme"></label>
+                        <label for="femme2">Femme<input type="radio" id="femme2" name="genre" value="femme"></label>
+                        <label for="NR2">non renseigné<input type="radio" id="NR2" name="genre" value="NR"></label>
+                    </div>
+                    <div>
+                        <label for="nom2">nom :<input type="text" id="nom2" name="nom" placeholder="votre nom"></label>
+                    </div>
+                    <div>
+                        <label for="prenom2">prenom :<input type="text" id="prenom2" name="prenom" placeholder="votre prenom"></label>
+                    </div>
+                    <div>
+                        <label for="age2">Age :<input type="number" id="age2" name="age" min="16" max="99" placeholder="min:16"></label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Situation personnelle</legend>
+                    <div>
+                        <label for="celibataire">Célibataire<input type="radio" id="celibataire" value="celib" name="situation"></label>
+                        <label for="marie">Marié<input type="radio" id="marie" value="marie" name="situation"></label>
+                        <label for="veuf">Veuf<input type="radio" id="veuf" value="veuf" name="situation"></label>
+                        <label for="UL">Union libre<input type="radio" id="UL" value="UN" name="situation"></label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Contact</legend>
+                    <div>
+                        <label for="tel">Téléphone :<input type="tel" id="tel" name="tel" placeholder="Ex : 06-12-34-56-78"></label>
+                    </div>
+                    <div>
+                        <label for="email2">Email :<input type="email" id="email2" name="email" placeholder="xxxxxx@xx.xx"></label>
+                    </div>
+                </fieldset>
+                <div>
+                    <label for="validation"><input type="checkbox" id="validation" name="validation" value="checked">Je jure sur l'honneur que les informations sont exacte.</label>
+                </div>
+                <div>
+                    <input type="submit" value="Transmettre mes coordonnées">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
